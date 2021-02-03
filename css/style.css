@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Noto+Sans+KR&display=swap");
+@import "reset.css";
+@import "variable.css";
+
+@import "leftstyle.css";
+@import "calculator.css";
+@import "paint.css";
+
+@import "rightstyle.css";
+
+/* @import "calculator.css"; */
+
+body {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* edit */
+  background-color: black;
+  width: 1200px;
+  height: 100vh;
+  /* font-family: 'Coda Caption', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+}
+
+.backgroundImg {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 5s ease-in-out;
+}
+
+.firstColum {
+  background-color: rgba(145, 131, 111, 0.479);
+  width: 500px;
+  margin: 10px 0px;
+  padding: 20px 10px;
+}
+
+.secondColum {
+  background-color: rgba(88, 85, 72, 0.411);
+  width: 650px;
+  margin: 10px 0px;
+  padding: 20px 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

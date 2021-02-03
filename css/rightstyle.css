@@ -1,0 +1,71 @@
+.secondColum h1 {
+  font-size: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: var(--color-font);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.taskForm {
+  text-align: center;
+}
+.taskForm-input {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-font);
+  font-weight: bolder;
+  border-bottom: solid 2px rgba(245, 245, 245, 0.877);
+}
+
+.taskForm-input::placeholder {
+  color: rgba(245, 245, 245, 0.877);
+  text-align: center;
+  font-weight: bold;
+}
+
+.secondColum h3 {
+  font-size: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.712);
+  margin-bottom: 5px;
+}
+
+.taskListBoard {
+  height: 288px;
+  border: rgb(105, 105, 105) solid 0.5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.taskListBoard-nav {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2px 10px 0px 10px;
+  background-color: rgba(155, 152, 152, 0.582);
+}
+
+.secondColum button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(252, 249, 249);
+  cursor: pointer;
+}
+
+.taskListBoard-pending,
+.taskListBoard-finish {
+  height: 260px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(52, 52, 53, 0.747);
+}
+
+.secondColum button:active {
+  transform: var(--transform-button);
+}

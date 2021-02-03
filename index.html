@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Daily Tasks</title>
+</head>
+<body>
+    <section class="firstColum">
+        <div class = "firstColum__dateTime">
+            <h4 class = "date dateJs">YYYYMMDD</h4>
+            <h1 class = "time timeJs">00:00</h1>
+        </div>
+        <div class = "firstColum__nameWeather">
+            <form class="nameForm nameFormJs">
+                <input class="nameInput nameInputJs" type="text" placeholder="what is your name?">
+            </form>
+            <div class="userName userNameJs">
+                hello, <br>soossssssssssssssss
+            </div>
+            <aside class = "weather weatherJs"> 
+                날씨:
+            </aside>
+        </div>
+        
+        <span class="toolBox">
+            <div class="toolBox__paintingBtn paintingJs" >
+                <i class="fas fa-palette fa-2x"></i>
+            </div>
+            <div class="toolBox__calculatorBtn calculatorJs">
+                <i class="fas fa-calculator fa-2x"></i>
+            </div>
+        </span>
+        <div class = "firstColum__tool">
+            <div class="toolBoard">
+                <div class="toolBoard__calculator calculatorJS">
+                    <div class="calculatorStyle">
+                        <div class="calculator__numbers">
+                            <div class = "calculator__result resultJS" value = "0">0</div>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button  id = "zeroBtn">0</button>
+                            <button class = "equalJS" data-mode="equal">=</button>
+                        </div>
+                        <div class="calculator__operators">
+                            <button id="reset" data-mode="reset">C</button>
+                            <button data-mode="operator">÷</button>
+                            <button data-mode="operator">x</button>
+                            <button data-mode="operator">-</button>
+                            <button data-mode="operator">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolBoard__painting paintingJS">
+                    <div class="paintingStyle" >
+                
+                    <div class="controls_colors" id="jsColors">
+                        <div class="controls_color jsColor" 
+                        style = "background-color: #FF3B30">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: orange">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: yellow">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: green">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: rgb(0, 177, 247)">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: blue">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: rgb(87, 10, 189)">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: #000000">
+                        </div>
+                        <div class="controls_color jsColor" 
+                        style = "background-color: white">
+                    </div>
+                </div>
+                
+                <canvas id="jsCanvas" class="canvas"> </canvas>
+                </div>
+                <div class="colorRange">
+                    <input 
+                    type="range" 
+                    id="jsRange" 
+                    min="0.1" 
+                    max="5" 
+                    value="2.5" 
+                    step="0.1">
+                </div>
+
+                <div class="colorBtn">
+                    <button id="jsMode">FILL</button>
+                    <button id="jsSave">SAVE</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "secondColum">
+
+        <h1>Today Things To do</h1>
+
+        <form class="taskForm">
+            <input class="taskForm-input taskinputJS" type="text" placeholder="write a task">
+        </form>
+
+        <h3>Pending</h3>
+        <div class="taskListBoard">
+            <nav class="taskListBoard-nav">
+                <button class="pendingDeletBtn"><i class="fas fa-trash-alt"></i></button>
+            </nav>
+            <ul class="taskListBoard-pending pendingJS">
+                <li class="pendingList"></li>
+            </ul>
+        </div>
+        <h3>Finish</h3>
+        <div class="taskListBoard">
+            <nav class="taskListBoard-nav">
+                <button class="finishDeletBtn"><i class="fas fa-trash-alt"></i></button>
+            </nav>
+            <ul class="taskListBoard-finish finishJS">
+                <li class="fishishList"></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/96ffcacce1.js" crossorigin="anonymous"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clockdate.js"></script>
+    <script src="js/usingtool.js" ></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

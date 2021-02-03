@@ -1,0 +1,124 @@
+/* @import "calculator.css"; */
+
+.firstColum__dateTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 130px;
+  /* edit */
+  background-color: rgb(18, 22, 29);
+}
+
+.date {
+  color: var(--color-font);
+  font-size: 20px;
+  font-family: "Coda Caption", sans-serif;
+}
+
+.time {
+  color: var(--color-font);
+  font-size: 100px;
+  font-family: "Coda Caption", sans-serif;
+}
+.firstColum__nameWeather {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  /* edit */
+  background-color: rgb(32, 11, 11);
+}
+
+.nameInput {
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 0.8px solid rgba(158, 158, 158, 0.726);
+  background-color: transparent;
+  color: var(--color-font);
+  text-align: center;
+  /* display: none; */
+}
+
+.userName {
+  width: 300px;
+  height: 60px;
+  font-size: 25px;
+  text-align: center;
+  overflow-wrap: break-word;
+  overflow: auto;
+  color: var(--color-font);
+  display: none;
+}
+
+.weather {
+  width: 200px;
+  height: 80px;
+  padding: 6.6% 0%;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  border-left: dotted var(--color-font) 1px;
+  color: var(--color-font);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.toolBox {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+/* tool icon button */
+.toolBox__paintingBtn {
+  color: rgba(172, 131, 77, 0.993);
+  cursor: pointer;
+  margin-right: 30px;
+  text-shadow: var(--shadow-box);
+}
+
+.toolBox__calculatorBtn {
+  color: var(--color-calculator);
+  text-shadow: var(--shadow-box);
+  cursor: pointer;
+}
+
+.toolBox div:active {
+  transform: var(--transform-button);
+}
+
+.toolBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 370px;
+}
+
+.toolBoard__calculator {
+  display: none;
+  animation: appearing 0.3s linear;
+}
+
+.toolBoard__painting {
+  width: 480px;
+  height: 350px;
+  display: none;
+  animation: appearing 0.3s linear;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes appearing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

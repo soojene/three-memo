@@ -1,0 +1,18 @@
+:root {
+  /* colors */
+  --color-background: #000000;
+  --color-font: #ffffff;
+
+  /* calculator color */
+  --color-calculator: #dd3125;
+  --color-operator: #e25e11d8;
+  --color-calculatorBackground: rgba(0, 0, 0, 0.637);
+  --color-calculatorBtn: #000000c9;
+  --color-calResult: rgba(255, 255, 255, 0.514);
+
+  /* shadow */
+  --shadow-box: 0 1px 2px rgb(32, 31, 31), 0 2px 3px rgba(47, 43, 95, 0.801);
+
+  /* button transform */
+  --transform-button: scale(0.96);
+}

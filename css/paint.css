@@ -1,0 +1,62 @@
+.paintingStyle {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+canvas {
+  background-color: white;
+  border: rgb(107, 106, 106) solid 0.7px;
+  border-radius: 10px;
+  width: 440px;
+  height: 300px;
+}
+
+/* .controls {
+    display: flex;
+    background-color: darkkhaki;
+  } */
+
+.controls_colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 1px 5px;
+  cursor: pointer;
+}
+
+.controls_color {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-box);
+  cursor: pointer;
+}
+
+.colorRange,
+.colorBtn {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.colorRange input {
+  cursor: pointer;
+}
+
+.colorBtn button {
+  width: 80px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: var(--shadow-box);
+  outline: none;
+  cursor: pointer;
+}
+
+.controls_color:active {
+  transform: var(--transform-button);
+}
+.colorBtn button:active {
+  transform: var(--transform-button);
+}
