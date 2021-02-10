@@ -40,7 +40,7 @@
   background-color: transparent;
   color: var(--color-font);
   text-align: center;
-  /* display: none; */
+  display: none;
 }
 
 .userName {
