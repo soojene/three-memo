@@ -13,7 +13,7 @@
     <script defer src="js/painting.js"></script>
     <script defer src="js/askname.js"></script>
 </head>
-<body>
+<body> 
     <section class="firstColum">
         <div class = "firstColum__dateTime">
             <h4 class = "date dateJs">YYYYMMDD</h4>
@@ -26,19 +26,21 @@
             <div class="userName userNameJs">
                 hello, <br>soossssssssssssssss
             </div>
-            <aside class = "weather weatherJs"> 
-                날씨:
-            </aside>
+            <div class="weather-toolBtn">
+                <aside class = "weather weatherJs"> 
+                    날씨:
+                </aside>
+                <span class="toolBox">
+                    <div class="toolBox__paintingBtn paintingJs" >
+                        <i class="fas fa-palette fa-lg"></i>
+                    </div>
+                    <div class="toolBox__calculatorBtn calculatorJs">
+                        <i class="fas fa-calculator fa-lg"></i>
+                    </div>
+                </span>
+            </div>
         </div>
-        
-        <span class="toolBox">
-            <div class="toolBox__paintingBtn paintingJs" >
-                <i class="fas fa-palette fa-2x"></i>
-            </div>
-            <div class="toolBox__calculatorBtn calculatorJs">
-                <i class="fas fa-calculator fa-2x"></i>
-            </div>
-        </span>
+
         <div class = "firstColum__tool">
             <div class="toolBoard">
                 <div class="toolBoard__calculator calculatorJS">
@@ -129,18 +131,18 @@
             <input class="taskForm-input taskinputJS" type="text" placeholder="write a task">
         </form>
 
-        <h3>Pending</h3>
         <div class="taskListBoard">
             <nav class="taskListBoard-nav">
+                <h3>Pending</h3>
                 <button class="pendingDeletBtn"><i class="fas fa-trash-alt"></i></button>
             </nav>
             <ul class="taskListBoard-pending pendingJS">
                 <li class="pendingList"></li>
             </ul>
         </div>
-        <h3>Finish</h3>
         <div class="taskListBoard">
             <nav class="taskListBoard-nav">
+                <h3>Finish</h3>
                 <button class="finishDeletBtn"><i class="fas fa-trash-alt"></i></button>
             </nav>
             <ul class="taskListBoard-finish finishJS">

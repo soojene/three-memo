@@ -5,6 +5,7 @@ function backgroundImg(randomNumber){
     const picture = new Image();
     picture.src = `img/${randomNumber}.jpg`;
     picture.classList.add("backgroundImg");
+    // body.style.backgroundImg=url(picture.src);
     body.appendChild(picture);
 }
 
