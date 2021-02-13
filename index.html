@@ -12,6 +12,7 @@
     <script defer src="js/weather.js"></script>
     <script defer src="js/painting.js"></script>
     <script defer src="js/askname.js"></script>
+    <script defer src="js/tasklist.js"></script>
 </head>
 <body> 
     <section class="firstColum">
@@ -125,28 +126,33 @@
 
     <section class = "secondColum">
 
-        <h1>Today Tasks</h1>
+        <h1>Today Memo</h1>
 
-        <form class="taskForm">
-            <input class="taskForm-input taskinputJS" type="text" placeholder="write a task">
+        <form class="taskForm formJS">
+            <input class="taskForm-input taskinputJS" 
+            type="text" placeholder="write a task">
         </form>
 
         <div class="taskListBoard">
             <nav class="taskListBoard-nav">
                 <h3>Pending</h3>
-                <button class="pendingDeletBtn"><i class="fas fa-trash-alt"></i></button>
+                <button class="pendingDeletBtn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
             </nav>
             <ul class="taskListBoard-pending pendingJS">
-                <li class="pendingList"></li>
+                <!-- <li class="pendingList"></li> -->
             </ul>
         </div>
         <div class="taskListBoard">
             <nav class="taskListBoard-nav">
                 <h3>Finish</h3>
-                <button class="finishDeletBtn"><i class="fas fa-trash-alt"></i></button>
+                <button class="finishDeletBtn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
             </nav>
             <ul class="taskListBoard-finish finishJS">
-                <li class="fishishList"></li>
+                <!-- <li class="finishList"></li> -->
             </ul>
         </div>
     </section>

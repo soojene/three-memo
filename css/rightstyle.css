@@ -65,7 +65,26 @@
   width: 600px;
   height: 260px;
   border-radius: 0px 0px 10px 10px;
+  overflow-y: scroll;
   background-color: rgba(52, 52, 53, 0.747);
+}
+
+.taskListBoard-pending li,
+.taskListBoard-finish li {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  color: var(--color-font);
+  background-color: rgba(31, 31, 31, 0.219);
+}
+
+.taskListBoard-pending li span,
+.taskListBoard-finish li span {
+  word-break: break-all;
+  padding-left: 10px;
 }
 
 .secondColum button:active {
