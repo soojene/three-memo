@@ -31,8 +31,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  /* edit */
-  background-color: rgb(100, 74, 25);
+  /* background-color: rgb(100, 74, 25); */
 }
 
 .nameInput {
@@ -51,12 +50,13 @@
   width: 300px;
   /* height: 100px; */
   font-size: 25px;
+  font-weight: bolder;
   text-align: center;
   overflow-wrap: break-word;
   overflow: auto;
   color: var(--color-font);
   display: none;
-  background-color: saddlebrown;
+  /* background-color: saddlebrown; */
 }
 
 .weather-toolBtn {
@@ -115,7 +115,7 @@
   width: 600px;
   height: 400px;
   border-radius: 10px;
-  background-color: rgba(27, 26, 31, 0.199);
+  /* background-color: rgba(27, 26, 31, 0.199); */
 }
 
 .toolBoard__calculator {
